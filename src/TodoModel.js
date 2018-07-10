@@ -27,12 +27,10 @@ export default class TodoModel {
     this.todos = todos;
     this.emit();//通知 改变了
   }
-
   addTodo = (todo) =>{  //增加信息  自己的state  只能自己改
         todo = Object.assign({},{id:Date.now(),completed:false},todo)  //合并数据
         let todos = this.todos;   //不能直接修改 state   需要中介
         todos.push(todo);
-
         this.saveAndNodify(todos);
 
   }

@@ -136,9 +136,9 @@ class TodoApp extends React.Component {
                   <div className="card-footer">
                     <TodoFooter activeTodoCount = {activeTodoCount} changeType={this.changeType} deleteCompleted={this.props.model.deleteCompleted}/>
                   </div>
-                      </div>
-                  </div>
+                </div>
               </div>
+            </div>
           </div>
         )
       }
